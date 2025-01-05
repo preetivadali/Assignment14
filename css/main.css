@@ -183,9 +183,16 @@ body {
 
 /* Testimonials Section */
 .testimonials-section {
-  padding: 4rem 1rem;
-  background-color: #f1f1f1;
+  position: relative;
   text-align: center;
+  padding: 5rem 1rem;
+  background: url('../images/testimonial-bgd.png') no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonials-section h2 {
@@ -203,18 +210,28 @@ body {
 /* Destinations Section */
 .destinations-section1 {
   position: relative;
+  text-align: center;
   padding: 6rem 10rem;
-  background: url('../images/selectplace-1.png') no-repeat center/cover;
-  text-align: left;
-  gap: 2rem; /* Space between cards */
+  background: url('../images/selectplace-1.png') no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+  display: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .destinations-section2 {
-  position: relative;
+  position: relative; /* Enable positioning context for child elements */
+  text-align: center;
   padding: 6rem 10rem;
-  background: url('../images/selectplace-2.png') no-repeat center/cover;
-  text-align: left;
-  gap: 2rem; /* Space between cards */
+  background: url('../images/selectplace-2.png') no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align other elements to the bottom if needed */
+  align-items: flex-end;
 }
 
 .destination-left {
@@ -229,14 +246,14 @@ body {
   max-width: 300px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   color: #ffffff;
-  font-family: 'Aleo';
+  font-family: 'Josefin Sans';
 
 }
-
-
-.destination-right{
-  display: flex; 
-  margin-left: calc((964.8px - 300px)); 
+.destination-right {
+  position: absolute; /* Position the element absolutely within its parent */
+  bottom: 1.5rem; /* Adjust the distance from the bottom */
+  right: 1.5rem; /* Adjust the distance from the right */
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
@@ -247,8 +264,7 @@ body {
   max-width: 300px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   color: #ffffff;
-  font-family: 'Aleo';
-
+  font-family: 'Josefin Sans';
 }
 .destination-content {
   text-align: left;
