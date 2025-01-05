@@ -20,7 +20,7 @@ body {
 .v0_3 {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.00009999999747378752);
+  background: rgba(0, 0, 0, 0.315);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -42,6 +42,7 @@ body {
   width: 100%;
   height: 271px;
   opacity: 1;
+  background: rgba(0, 0, 0, 0.315);
   position: absolute;
   top: 0px;
   left: 0px;
@@ -895,14 +896,17 @@ body {
 }
 
 .v0_92 {
-  width: 17px;
-  height: 11px;
-  background: rgba(255, 255, 255, 1);
-  opacity: 1;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 11px solid rgba(255, 255, 255, 0.146);
   position: absolute;
   top: 25px;
   left: 45px;
+  opacity: 1;
 }
+
 
 .v0_93 {
   width: 100%;
@@ -1042,4 +1046,111 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #536DFE;
     border-radius: 5px;
+}
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-socials a {
+  color: #fff;
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+.footer-socials a:hover {
+  color: #536DFE;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer-content h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #536DFE;
+}
+
+/* How It Works Section */
+.how-it-works {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.how-it-works h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #111;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.testimonials h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background: url('../images/WhyChooseUs.png') no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
